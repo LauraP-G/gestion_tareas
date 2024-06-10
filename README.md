@@ -7,8 +7,8 @@ Eliminar tareas existentes haciendo clic en el icono de eliminación.
 Mostrar el número total de tareas pendientes.
 
 ## Tecnologías utilizadas:
-React
-FontAwesome para iconos
+React.
+FontAwesome para iconos.
 
 ## Instrucciones de uso:
 Clona este repositorio a tu máquina local.
