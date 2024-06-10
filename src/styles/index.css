@@ -1,0 +1,70 @@
+body {
+    background-color: #131312e7;
+    color: #58a6ee;
+}
+
+h1 {
+    color: #42a7cf;
+}
+
+.mainContainer {
+    width: 500px;
+    height: auto;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: transparent;
+    box-shadow: 0 0 20px 15px #3534349f;
+}
+
+input {
+    background-color: transparent;
+    color: #58a6ee;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 2px solid #b9bcc0;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input:focus {
+    border-color: #58a6ee;
+}
+
+
+::placeholder {
+    color: #58a6ee;
+}
+
+.list {
+    margin-top: 8px;
+    list-style-type: none;
+    position: relative;
+    padding-right: 20px;
+    border: none;
+    border-bottom: 1px solid #b9bcc0;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.iconTrash {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.list:hover .iconTrash {
+    visibility: visible;
+}
+
+.pendingTask {
+    margin-top: 30px;
+    color: rgb(252, 171, 22);
+}
