@@ -1,20 +1,25 @@
-# Lista de tareas simple con React
+# Lista de Tareas Simple con React
+
 Este es un proyecto simple de una lista de tareas desarrollado con React. Permite al usuario agregar nuevas tareas presionando Enter, eliminar tareas existentes haciendo clic en un icono de eliminación, y muestra el número total de tareas pendientes.
 
-## Características:
-Añadir nuevas tareas presionando Enter.
-Eliminar tareas existentes haciendo clic en el icono de eliminación.
-Mostrar el número total de tareas pendientes.
+## Características
 
-## Tecnologías utilizadas:
-React.
-FontAwesome para iconos.
+- Añadir nuevas tareas presionando Enter.
+- Eliminar tareas existentes haciendo clic en el icono de eliminación.
+- Mostrar el número total de tareas pendientes.
 
-## Instrucciones de uso:
-Clona este repositorio a tu máquina local.
-Ejecuta npm install para instalar las dependencias.
-Ejecuta npm start para iniciar la aplicación en el entorno de desarrollo.
-Abre http://localhost:3000 para ver la aplicación en tu navegador.
+## Tecnologías utilizadas
+
+- React
+- FontAwesome para iconos
+
+## Instrucciones de uso
+
+1. Clona este repositorio a tu máquina local.
+2. Ejecuta `npm install` para instalar las dependencias.
+3. Ejecuta `npm start` para iniciar la aplicación en el entorno de desarrollo.
+4. Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación en tu navegador.
+
 
 
 ### Contributors
