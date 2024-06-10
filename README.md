@@ -16,7 +16,6 @@ Ejecuta npm install para instalar las dependencias.
 Ejecuta npm start para iniciar la aplicación en el entorno de desarrollo.
 Abre http://localhost:3000 para ver la aplicación en tu navegador.
 
-¡Disfruta organizando tus tareas con esta simple lista de tareas en React!
 
 ### Contributors
 
