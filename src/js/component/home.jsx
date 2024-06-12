@@ -20,17 +20,6 @@ const Home = () => {
 
   }
 
-  const renderTasks = () => {
-    return arrayTasks.map((singleTask, index) => (
-      <li className="list" key={index}>
-        {index + 1}. {singleTask}
-        <span className="iconTrash" onClick={() => deleteTask(index)}>
-          <FontAwesomeIcon icon={faTrash} />
-        </span>
-      </li>
-    ));
-  };
-
   const deleteTask = (index) => {
     // Creo una copia del array actual
     const newTasks = [...arrayTasks];
@@ -40,15 +29,6 @@ const Home = () => {
 
     // con el nuevo array cambio el valor de arrayTaks
     setArrayTasks(newTasks);
-  }
-
-  const pendingTask = () => {
-    if (arrayTasks.length === 0) {
-      return "No pending tasks"
-    }
-    else {
-      return `Pending tasks: ${arrayTasks.length}`
-    }
   }
 
 
@@ -63,11 +43,18 @@ const Home = () => {
         </div>
 
         <ul>
-         {renderTasks()}
+        {arrayTasks.map((singleTask, index) => (
+            <li className="list" key={index}>
+              {index + 1}. {singleTask}
+              <span className="iconTrash" onClick={() => deleteTask(index)}>
+                <FontAwesomeIcon icon={faTrash} />
+              </span>
+            </li>
+          ))}
         </ul>
 
         <div className="pendingTask">
-          {pendingTask()}
+          {arrayTasks.length === 0 ? "No pending tasks" : `Pending tasks: ${arrayTasks.length}` }
         </div>
 
       </div>
@@ -81,14 +68,29 @@ export default Home;
 
 
 
-/* opcion para renderizar en la parte de HTML
 
-{arrayTasks.map((singleTask, index) => (
-            <li className="list" key={index}>
-              {index + 1}. {singleTask}
-              <span className="iconTrash" onClick={() => deleteTask(index)}>
-                <FontAwesomeIcon icon={faTrash} />
-              </span>
-            </li>
-          ))}
-        */
+
+
+/* opcion para renderizar añadir tarea con una funcion 
+ /* const renderTasks = () => {
+    return arrayTasks.map((singleTask, index) => (
+      <li className="list" key={index}>
+        {index + 1}. {singleTask}
+        <span className="iconTrash" onClick={() => deleteTask(index)}>
+          <FontAwesomeIcon icon={faTrash} />
+        </span>
+      </li>
+    ));
+  };*/
+
+
+  /*  opcion para eliminar tarea con llamando a la función tarea pendiente 
+  const pendingTask = () => {
+    if (arrayTasks.length === 0) {
+      return "No pending tasks"
+    }
+    else {
+      return `Pending tasks: ${arrayTasks.length}`
+    }
+  }*/
+
