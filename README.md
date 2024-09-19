@@ -1,7 +1,7 @@
 
 # Aplicación de Gestión de Tareas
 
-Esta es una **aplicación de gestión de tareas** desarrollada en React. Permite a los usuarios agregar, eliminar y listar tareas. La aplicación se conecta a una API para manejar el almacenamiento y recuperación de las tareas.
+Esta es una **aplicación de gestión de tareas** desarrollada en React. Permite a los usuarios agregar tareas al pulsar "Enter", eliminar y listar tareas. La aplicación se conecta a una API para manejar el almacenamiento y recuperación de las tareas.
 
 <div style="text-align: center;">
   <img src="src/img/vistaInicial.png" alt="Vista del Listado Vacío" style="width: 40%; margin: 5px;"/>
